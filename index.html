@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Битва за Рокуган — Веб-версия</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Битва за Рокуган</h1>
+    <div id="phase">Фаза: Подготовка</div>
+  </header>
+
+  <main>
+    <section id="game-area">
+      <svg id="map" width="600" height="400" aria-label="Карта провинций"></svg>
+      <div id="token-bar" aria-label="Жетоны для выбора"></div>
+    </section>
+
+    <section id="info-panel">
+      <div id="players-panel"></div>
+      <div id="log" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <script src="data.js"></script>
+  <script src="telegram.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
